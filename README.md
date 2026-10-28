@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/opencode-notes.svg)](https://www.npmjs.com/package/opencode-notes)
 [![license](https://img.shields.io/npm/l/opencode-notes.svg)](./LICENSE)
+[![opencode.cafe](https://img.shields.io/badge/opencode.cafe-listed-ffcc00.svg)](https://www.opencode.cafe/plugin/opencode-notes)
 
 Per-session notes for [OpenCode](https://opencode.ai) V2, in the terminal.
 
