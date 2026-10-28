@@ -1,0 +1,49 @@
+{
+  "name": "opencode-notes",
+  "version": "0.1.0",
+  "description": "Per-session notes for OpenCode V2 with a /notes TUI editor and sidebar preview. Stored as plain Markdown and never injected into model context.",
+  "type": "module",
+  "license": "MIT",
+  "author": "mmhlego",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmhlego/opencode-notes.git"
+  },
+  "homepage": "https://github.com/mmhlego/opencode-notes#readme",
+  "bugs": {
+    "url": "https://github.com/mmhlego/opencode-notes/issues"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./server": "./src/index.ts",
+    "./tui": "./src/tui.tsx"
+  },
+  "files": [
+    "src",
+    "tui.js",
+    "server.js"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "plugin",
+    "tui",
+    "notes",
+    "session-notes",
+    "scratchpad",
+    "markdown"
+  ],
+  "dependencies": {
+    "@opencode/plugin": "^2.2.0"
+  },
+  "devDependencies": {
+    "@opentui/core": "^0.7.0",
+    "@opentui/solid": "^0.7.0",
+    "@types/bun": "^1.4.4",
+    "solid-js": "1.9.12",
+    "typescript": "^5.9.3"
+  }
+}

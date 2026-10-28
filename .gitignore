@@ -1,0 +1,11 @@
+node_modules/
+dist/
+bun.lockb
+.DS_Store
+*.log
+
+# Never commit note data, even if a custom dataDir points here.
+notes/
+
+# Local OpenCode project config, not part of the plugin
+.opencode/
