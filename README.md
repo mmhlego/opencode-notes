@@ -1,5 +1,8 @@
 # opencode-notes
 
+[![npm](https://img.shields.io/npm/v/opencode-notes.svg)](https://www.npmjs.com/package/opencode-notes)
+[![license](https://img.shields.io/npm/l/opencode-notes.svg)](./LICENSE)
+
 Per-session notes for [OpenCode](https://opencode.ai) V2, in the terminal.
 
 Notes are plain Markdown, stored outside your repo, and **never injected into model context** — the agent cannot see them unless you paste them in. That is the point: a scratch space that costs zero tokens.
@@ -13,16 +16,22 @@ It is deliberately not a memory plugin: nothing is added to prompts, nothing is 
 ## Install
 
 ```sh
-opencode plugin add github:mmhlego/opencode-notes
+opencode plugin add opencode-notes
 ```
 
-Or pin it in `~/.config/opencode/opencode.json`:
+Or add it to `~/.config/opencode/opencode.json`:
 
 ```jsonc
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugins": ["github:mmhlego/opencode-notes"]
+  "plugins": ["opencode-notes"]
 }
+```
+
+To pin a commit or branch instead of the published release:
+
+```sh
+opencode plugin add 'github:mmhlego/opencode-notes#main'
 ```
 
 Requires **OpenCode V2**. The plugin is TUI-only; the server part is an intentional no-op.
@@ -49,7 +58,7 @@ Set `OPENCODE_DATA_DIR` to change the base data directory, or pass a `dataDir` o
 
 ```jsonc
 {
-  "plugins": [{ "package": "github:mmhlego/opencode-notes", "options": { "dataDir": "/path/to/data" } }]
+  "plugins": [{ "package": "opencode-notes", "options": { "dataDir": "/path/to/data" } }]
 }
 ```
 
